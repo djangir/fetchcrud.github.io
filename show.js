@@ -12,13 +12,6 @@ let nextpage = document.getElementById('nextpage');
 
 let curpage = document.getElementById('curpage');
 
-back.innerHTML = "";
-backpage.innerHTML = "";
-back.value = "";
-
-nextpage.innerHTML = "";
-next.innerHTML = "";
-
 let error = document.getElementById("error");
 
 let modal_close = document.getElementsByClassName('close');
@@ -26,6 +19,14 @@ let modal_close = document.getElementsByClassName('close');
 let modal = document.getElementsByClassName('modal');
 
 let newuser = document.getElementsByClassName('new1');
+
+
+back.innerHTML = "";
+backpage.innerHTML = "";
+back.value = "";
+
+nextpage.innerHTML = "";
+next.innerHTML = "";
 
 let tr = ""
 
@@ -250,7 +251,6 @@ function update_data(idupdate) {
   })
 
   console.log(dataaa)
-  // var urll = `https://gorest.co.in/public/v1/users?id=${idupdate}`; 
 
   var urll = `https://gorest.co.in/public-api/users/${idupdate}`;
 
@@ -350,8 +350,6 @@ function davedata() {
 
 
 function deleterec(iddd) {
-
-  // var urll = `https://gorest.co.in/public/v1/users?id=${iddd}`; 
 
   var urll = `https://gorest.co.in/public-api/users/${iddd}`;
 
