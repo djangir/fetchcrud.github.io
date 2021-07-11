@@ -253,7 +253,9 @@ var dataaa = JSON.stringify({
   })
 
 console.log(dataaa)
-var urll = `https://gorest.co.in/public/v1/users?id=${idupdate}`; 
+// var urll = `https://gorest.co.in/public/v1/users?id=${idupdate}`; 
+
+ var urll = `https://gorest.co.in/public-api/users/${idupdate}`;
 
 fetch(urll , {
   method: 'PUT',
@@ -263,8 +265,8 @@ fetch(urll , {
   },
 })
   .then((response) =>{ 
-
-    response.json()
+return response.json()
+console.log(response.json());
 })
   
   .then((json) =>{ 
@@ -352,13 +354,18 @@ console.log(error)
 
 function deleterec(iddd){
 
-var urll = `https://gorest.co.in/public/v1/users?id=${iddd}`; 
+// var urll = `https://gorest.co.in/public/v1/users?id=${iddd}`; 
 
+var urll = `https://gorest.co.in/public-api/users/${iddd}`; 
 
 
 fetch(urll , {
   method: 'DELETE',
-}) 
-
+}).then((asdf)=>{
+   return asdf.json();
+})
+.then((asdf)=>{
+    alert("Delete Message : "+ asdf.data.message);
+})
 ;
 }
