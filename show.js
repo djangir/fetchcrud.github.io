@@ -164,7 +164,7 @@ if(page == tpages){
 } 
 
 
-
+tr = "";
 for(let i in dataa.data){
 tr += `<tr> <td>${dataa.data[i].id}</td>
     <td>${dataa.data[i].name} </td>
