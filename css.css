@@ -1,8 +1,8 @@
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 .new1{
 	padding: 10px;
@@ -14,49 +14,62 @@
 	margin: 50px 50px 10px auto;
 	border-radius: 5px;
 	cursor: pointer;
-}
+	}
 
-.close{
+	
+.submit{
 	padding: 10px;
-	background-color: red;
+	background-color: blue;
 	color: white;
 	font-weight: bold;
-	width: 50px;
+	width: 100px;
 	text-align: center;
-	margin: 0 10px 10px auto;
+	margin: 50px auto;
 	border-radius: 5px;
 	cursor: pointer;
+	}
+	
+.close{
+padding: 10px;
+background-color: red;
+color: white;
+font-weight: bold;
+width: 50px;
+text-align: center;
+margin: 0 10px 10px auto;
+border-radius: 5px;
+cursor: pointer;
 }
 
 th, td {
-  padding: 10px;
+padding: 10px;
 }
 table{
-	width: 100%;
-	text-align: center;
+width: 100%;
+text-align: center;
 }
 
 .table{
-	padding: 10px;
+padding: 10px;
 }
 .span1{
-    margin: auto;
-    display: inline-block;
-    padding: 10px;
-    cursor: pointer;
+margin: auto;
+display: inline-block;
+padding: 10px;
+cursor: pointer;
 }
 input{
-	width: 70%;
-	display: block;
-	margin:30px auto;
-	padding: 10px;
-	border-radius: 10px;
-	border-top: none;
+width: 70%;
+display: block;
+margin:30px auto;
+padding: 10px;
+border-radius: 10px;
+border-top: none;
 }
 input[type=submit]{
-	background: blue;
-	color: white;
-	cursor: pointer;
+background: blue;
+color: white;
+cursor: pointer;
 }
 
 
@@ -66,22 +79,22 @@ top: 20px;
 bottom: 20px;
 left: 20px;
 right: 20px;
-background: #000000c7;
+background: #000;
 border-radius: 10px;
 padding: 20px;
 color: white;
 }
 .none{
-	display: none;
+display: none;
 }
 .block{
-	display:block;
+display:block;
 }
 #submit{
-	background: blue;
-	color: white;
-	font-weight: bolder;
-	cursor: pointer;
+background: blue;
+color: white;
+font-weight: bolder;
+cursor: pointer;
 }
 
 #error{
@@ -96,23 +109,23 @@ font-size: xx-large;
 }
 
 #paginations{
-	text-align: center;
-	padding: 20px;
-	margin: 20px;
+text-align: center;
+padding: 20px;
+margin: 20px;
 }
 
 #paginations span{
-	cursor: pointer;
-	padding: 10px;
-	color: blue;
-	margin: 10px;
-	font-weight: bolder;
-	font-size: xx-large;
-	border: 1px solid blue;
+cursor: pointer;
+padding: 10px;
+color: blue;
+margin: 10px;
+font-weight: bolder;
+font-size: xx-large;
+border: 1px solid blue;
 }
 
 #users{
-	color: white;
-	font-size: x-large;
-	text-align: center;
+color: white;
+font-size: x-large;
+text-align: center;
 }
