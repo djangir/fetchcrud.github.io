@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Js Crud With Ajax</title>
+ <link rel="stylesheet" type="text/css" href="css.css">
+
+</head>
+<body>
+
+<div class="new1" onclick="showfunction(modal_show)">New User</div>
+
+<div class="table">
+<table cellspacing="0" border="1px solid">
+  <tr>
+    <th>#</th>
+    <th>name</th> 
+    <th>action</th>
+  </tr>
+
+  <tbody id="dataa"> 
+  </tbody>
+</table>
+</div>
+
+<div id="error" class="none">Eerror</div>   
+
+<!-- pagination -->
+
+<div id="paginations"> 
+  
+  <span id="back"></span>
+  <span id="backpage"></span>
+  <span id="curpage"></span>
+  <span id="nextpage"></span>
+  <span id="next"></span>
+
+</div>
+
+<!-- pagination -->
+
+  
+
+<div id="modal_show" class="modal none">
+<div class="fixed">
+
+<div class="close">X</div> 
+
+<form id="form">
+
+<input type="text" id="id" placeholder="id">
+
+<input type="text" id="name" placeholder="name">
+
+<input type="text" id="email" placeholder="email">
+  
+<input type="text" id="gender" placeholder="gender">
+
+<input type="text" id="status" placeholder="status">
+ 
+<div class="new1" onclick="davedata()"> submit
+</div>
+</form>
+
+</div>
+</div>
+
+
+<!-- edit users -->
+
+
+<div id="editusers" class="modal none">
+<div class="fixed">
+
+<h2>update data</h2>
+
+<div class="close">X</div> 
+<div id="updateee">
+</div>
+</div>
+</div>
+
+
+<!-- edit users -->
+
+
+
+<div id="users" class="modal none">
+<div class="fixed">
+<div class="close">X</div> 
+
+
+<div class="table">
+<table cellspacing="0" border="1px solid">
+  <tr>
+    <th>Id</th>
+    <th>Name</th> 
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Status</th>
+  </tr>
+
+  <tr id="single_data"> 
+  </tr>
+</table>
+</div>
+
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="show.js"></script>
+</body>
+</html>
